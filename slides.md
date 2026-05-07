@@ -134,83 +134,32 @@ transition: slide-left
 </div>
 
 ---
-layout: default
+layout: two-cols
 ---
 
 # 为什么要学迭代？
 
-<div
-  style="
-    max-width: 1040px;
-    margin: 0.8rem auto 0;
-    padding: 1rem 1.1rem 1.15rem;
-    border-radius: 28px;
-    background:
-      radial-gradient(circle at 10% 14%, rgba(15,118,110,0.12), transparent 18%),
-      linear-gradient(180deg, rgba(255,255,255,0.98), rgba(242,247,246,0.96));
-    border: 1px solid rgba(17,58,82,0.10);
-    box-shadow: 0 18px 50px rgba(11,36,52,0.10);
-  "
->
-  <p style="margin:0 0 0.85rem;color:#203247;line-height:1.7;">
-    很多问题不能“一步算出答案”，但可以通过不断更新状态逐步接近目标。
-  </p>
+很多问题不能“一步算出答案”，但可以通过不断更新状态逐步接近目标。
 
-  <div
-    style="
-      display:grid;
-      grid-template-columns: 1.25fr 1fr;
-      gap: 0.9rem;
-      align-items: stretch;
-    "
-  >
-    <div
-      style="
-        padding: 0.95rem 1rem;
-        border-radius: 22px;
-        background: rgba(255,255,255,0.88);
-        border: 1px solid rgba(17,58,82,0.08);
-        box-shadow: 0 10px 24px rgba(11,36,52,0.06);
-      "
-    >
-      <div style="font-size:0.95rem;font-weight:900;color:#113a52;margin-bottom:0.45rem;">典型场景</div>
-      <div style="display:grid;gap:0.38rem;color:#203247;line-height:1.62;">
-        <div>1. 数列问题：由前几项推出后几项</div>
-        <div>2. 状态问题：每一步都由上一步决定</div>
-        <div>3. 数值问题：无法直接求精确解，只能逐步逼近</div>
-        <div>4. 程序实现：循环结构天然适合表达迭代过程</div>
-      </div>
-    </div>
-
-    <div
-      style="
-        padding: 0.95rem 1rem;
-        border-radius: 22px;
-        background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(240,244,255,0.86));
-        border: 1px solid rgba(72,86,214,0.12);
-        box-shadow: 0 10px 24px rgba(11,36,52,0.06);
-      "
-    >
-      <div style="font-size:0.95rem;font-weight:900;color:#4856d6;margin-bottom:0.45rem;">一句话理解</div>
-      <p style="margin:0;color:#203247;line-height:1.72;">
-        如果一个问题可以拆成连续的小步骤，并且每一步都依赖当前状态，那么它大概率适合用迭代来写。
-      </p>
-    </div>
-  </div>
+<div style="margin-top:1rem;padding:0.95rem 1rem;border-radius:22px;background:rgba(255,255,255,0.88);border:1px solid rgba(17,58,82,0.08);box-shadow:0 10px 24px rgba(11,36,52,0.06);">
+  <div style="font-size:0.95rem;font-weight:900;color:#113a52;margin-bottom:0.55rem;">典型场景</div>
 </div>
 
-<div
-  style="
-    max-width: 1040px;
-    margin: 0.85rem auto 0;
-    padding: 0.9rem 1rem;
-    border-radius: 20px;
-    background: linear-gradient(135deg, rgba(255,241,241,0.98), rgba(255,255,255,0.92));
-    border: 1px solid rgba(214,69,69,0.20);
-    box-shadow: 0 10px 24px rgba(214,69,69,0.08);
-    color: #16273b;
-  "
->
+1. 数列问题：由前几项推出后几项
+2. 状态问题：每一步都由上一步决定
+3. 数值问题：无法直接求精确解，只能逐步逼近
+4. 程序实现：循环结构天然适合表达迭代过程
+
+::right::
+
+<div style="margin-top:2.3rem;padding:0.95rem 1rem;border-radius:22px;background:linear-gradient(180deg, rgba(255,255,255,0.96), rgba(240,244,255,0.86));border:1px solid rgba(72,86,214,0.12);box-shadow:0 10px 24px rgba(11,36,52,0.06);">
+  <div style="font-size:0.95rem;font-weight:900;color:#4856d6;margin-bottom:0.45rem;">一句话理解</div>
+  <p style="margin:0;color:#203247;line-height:1.72;">
+    如果一个问题可以拆成连续的小步骤，并且每一步都依赖当前状态，那么它大概率适合用迭代来写。
+  </p>
+</div>
+
+<div style="margin-top:1rem;padding:0.9rem 1rem;border-radius:20px;background:linear-gradient(135deg, rgba(255,241,241,0.98), rgba(255,255,255,0.92));border:1px solid rgba(214,69,69,0.20);box-shadow:0 10px 24px rgba(214,69,69,0.08);color:#16273b;">
   迭代思想的本质：把复杂问题拆成一系列<span style="color:#d64545;font-weight:900;">重复的小步骤</span>。
 </div>
 
@@ -1058,9 +1007,13 @@ layout: default
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.85rem;">
     <div style="padding:0.95rem 1rem;border-radius:22px;background:rgba(255,255,255,0.88);border:1px solid rgba(17,58,82,0.08);box-shadow:0 10px 24px rgba(11,36,52,0.06);">
       <div style="font-size:0.92rem;font-weight:900;color:#113a52;margin-bottom:0.45rem;">已知初值</div>
-      <div style="color:#203247;line-height:1.62;">$X=(x_0,x_1,\ldots,x_{n-1})$</div>
+      <div style="color:#0f4f59;line-height:1.62;font-size:1.15rem;font-weight:700;font-family:'JetBrains Mono','Fira Code','Times New Roman',serif;">
+        X = (x<sub>0</sub>, x<sub>1</sub>, ..., x<sub>n-1</sub>)
+      </div>
       <div style="margin-top:0.75rem;font-size:0.92rem;font-weight:900;color:#113a52;">迭代关系方程组</div>
-      <div style="color:#203247;line-height:1.62;">$x_i=g_i(X),\quad i=0,1,\ldots,n-1$</div>
+      <div style="color:#0f4f59;line-height:1.62;font-size:1.15rem;font-weight:700;font-family:'JetBrains Mono','Fira Code','Times New Roman',serif;">
+        x<sub>i</sub> = g<sub>i</sub>(X),&nbsp; i = 0, 1, ..., n - 1
+      </div>
       <div style="margin-top:0.4rem;color:#203247;">其中 <code>w</code> 为解的精度。</div>
     </div>
   </div>
