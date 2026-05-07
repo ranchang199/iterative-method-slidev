@@ -42,6 +42,29 @@ npm run build
 
 - `vercel.json`
 - `netlify.toml`
+- `.github/workflows/deploy-pages.yml`
+
+## 用 GitHub Pages 在线分享
+
+把仓库推送到 GitHub 后，按下面设置一次即可：
+
+1. 进入仓库 `Settings`
+2. 打开 `Pages`
+3. 在 `Build and deployment` 里选择 `GitHub Actions`
+4. 保证默认分支是 `main`
+5. 之后每次 `push` 到 `main`，GitHub 都会自动构建并发布
+
+发布成功后，在线地址通常是：
+
+```text
+https://你的用户名.github.io/你的仓库名/
+```
+
+如果仓库名本身就是 `你的用户名.github.io`，那么地址就是：
+
+```text
+https://你的用户名.github.io/
+```
 
 ## 技术栈
 
