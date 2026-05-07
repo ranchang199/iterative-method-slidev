@@ -1261,8 +1261,8 @@ class: text-center
 # 小结
 
 <div style="max-width:1040px;margin:0.8rem auto 0;padding:1rem 1.1rem 1.2rem;border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,0.98),rgba(243,248,247,0.96));border:1px solid rgba(17,58,82,0.10);box-shadow:0 18px 50px rgba(11,36,52,0.10);">
-  <p style="margin:0 0 0.8rem;color:#203247;line-height:1.7;">迭代算法的关键是：</p>
-  <div style="margin-bottom:0.9rem;color:#1d3652;font-size:1.1rem;font-weight:850;">
+  <p style="margin:0 0 0.55rem;color:#203247;line-height:1.6;">迭代算法的关键是：</p>
+  <div style="margin-bottom:0.65rem;color:#1d3652;font-size:1rem;font-weight:850;">
     <span style="display:inline-block;padding:0.05rem 0.4rem;border-radius:999px;border:2px solid rgba(214,69,69,0.72);background:rgba(255,241,241,0.82);color:#d64545;">初值</span>
     、<span style="display:inline-block;padding:0.05rem 0.4rem;border-radius:999px;border:2px solid rgba(214,69,69,0.72);background:rgba(255,241,241,0.82);color:#d64545;">关系式</span>
     、<span style="display:inline-block;padding:0.05rem 0.4rem;border-radius:999px;border:2px solid rgba(214,69,69,0.72);background:rgba(255,241,241,0.82);color:#d64545;">更新过程</span>
@@ -1280,12 +1280,12 @@ class: text-center
   </table>
 </div>
 
-<div style="max-width:1040px;margin:0.75rem auto 0;padding:0.9rem 1rem;border-radius:20px;background:linear-gradient(135deg,rgba(255,241,241,0.98),rgba(255,255,255,0.92));border:1px solid rgba(214,69,69,0.20);box-shadow:0 10px 24px rgba(214,69,69,0.08);color:#16273b;">
+<div style="max-width:1040px;margin:0.55rem auto 0;padding:0.75rem 0.95rem;border-radius:20px;background:linear-gradient(135deg,rgba(255,241,241,0.98),rgba(255,255,255,0.92));border:1px solid rgba(214,69,69,0.20);box-shadow:0 10px 24px rgba(214,69,69,0.08);color:#16273b;">
 迭代算法的本质不是公式堆砌，而是把复杂问题拆成一次又一次的<span style="color:#d64545;font-weight:900;">状态更新</span>。
 </div>
 
-<div style="max-width:1040px;margin:0.75rem auto 0;padding:0.9rem 1rem;border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,0.96),rgba(233,244,241,0.86));border:1px dashed rgba(15,118,110,0.24);box-shadow:0 10px 24px rgba(11,36,52,0.06);color:#203247;line-height:1.7;">
+<div style="max-width:1040px;margin:0.55rem auto 0;padding:0.75rem 0.95rem;border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,0.96),rgba(233,244,241,0.86));border:1px dashed rgba(15,118,110,0.24);box-shadow:0 10px 24px rgba(11,36,52,0.06);color:#203247;line-height:1.6;">
 学完这一章，真正要带走的不是几个例题，而是一个统一框架：先找<span style="color:#d64545;font-weight:900;">当前状态</span>，再写出<span style="color:#d64545;font-weight:900;">更新规则</span>，最后设定<span style="color:#d64545;font-weight:900;">结束条件</span>。
 </div>
 
-<div style="display:inline-block;margin-top:0.9rem;padding:0.2rem 0.7rem;border-radius:999px;background:rgba(15,118,110,0.10);border:1px solid rgba(15,118,110,0.18);color:#0f766e;font-size:0.8rem;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;">Iteration Is Controlled Change</div>
+<div style="display:inline-block;margin-top:0.65rem;padding:0.18rem 0.65rem;border-radius:999px;background:rgba(15,118,110,0.10);border:1px solid rgba(15,118,110,0.18);color:#0f766e;font-size:0.76rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;">Iteration Is Controlled Change</div>
